@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+" default-lazy-init = "true"
+>
+       
+    <bean id="creatorProvider" 
+        class="com.mycompany.springdidz.onlyxml.classes.providers.WhoCreateMe"
+        scope="prototype"
+        />
+
+    <bean id="simpleRender" 
+          class="com.mycompany.springdidz.onlyxml.classes.renders.SimpleMessageRender"
+    c:_0="Simple Str">
+        <property name="set">
+            <set>
+                <value>Hello from set</value>
+                <ref bean="creatorProvider"/>
+            </set>
+        </property>        
+        <property name="map">
+            <map>
+                <entry key="someStr">
+                    <value>Simple Str form map</value>
+                </entry>
+                <entry key="someBean">
+                    <ref bean="creatorProvider"/>
+                </entry>
+            </map>
+        </property>
+        <property name="list">
+            <list>
+                <value>Hello from list</value>
+                <ref bean="creatorProvider"/>
+            </list>
+        </property>
+        <property name="provider" ref="creatorProvider"/>
+    </bean>
+    
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+    <bean id="simpleBean" 
+          class="com.mycompany.springdidz.onlyxml.inheritanceofbeans.classes.SimpleMessage"
+    >
+        <property name="message1" value="From Simple Bean message1" />
+        <property name="message2" value="From Simple Bean message2" />
+    </bean>
+    
+    <bean id="otherBean" class="com.mycompany.springdidz.onlyxml.inheritanceofbeans.classes.OtherMessage"
+        parent="simpleBean" >
+        <property name="message1" value="From Other Bean message1" />
+        <property name="message3" value="From Other Bean message3" />
+    </bean>
+     
+</beans>
