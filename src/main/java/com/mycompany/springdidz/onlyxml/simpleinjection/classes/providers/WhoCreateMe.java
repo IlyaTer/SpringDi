@@ -1,6 +1,6 @@
-package com.mycompany.springdidz.onlyxml.classes.providers;
+package com.mycompany.springdidz.onlyxml.simpleinjection.classes.providers;
 
-import com.mycompany.springdidz.onlyxml.interfaces.provider.IMessageProvider;
+import com.mycompany.springdidz.onlyxml.simpleinjection.interfaces.provider.IMessageProvider;
 import org.springframework.beans.factory.InitializingBean;
 
 public class WhoCreateMe implements IMessageProvider, InitializingBean {

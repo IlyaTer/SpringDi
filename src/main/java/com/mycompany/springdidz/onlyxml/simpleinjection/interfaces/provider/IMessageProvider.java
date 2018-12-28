@@ -1,4 +1,4 @@
-package com.mycompany.springdidz.onlyxml.interfaces.provider;
+package com.mycompany.springdidz.onlyxml.simpleinjection.interfaces.provider;
 
 public interface IMessageProvider {
     

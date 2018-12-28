@@ -14,6 +14,7 @@ Without this configuration present, some functionality in the IDE may be limited
             <config-file>src/main/java/com/mycompany/springdidz/onlyxml/spel/config/SpringXMLConfig.xml</config-file>
             <config-file>src/main/java/com/mycompany/springdidz/onlyxml/autowiring/config/SpringXMLConfig.xml</config-file>
             <config-file>src/main/java/com/mycompany/springdidz/onlyxml/factorymethod/config/SpringXMLConfig.xml</config-file>
+            <config-file>src/main/java/com/mycompany/springdidz/onlyxml/lminjection/config/SpringXMLConfig.xml</config-file>
         </config-files>
         <config-file-groups/>
     </spring-data>

@@ -1,7 +1,7 @@
-package com.mycompany.springdidz.onlyxml.classes.renders;
+package com.mycompany.springdidz.onlyxml.simpleinjection.classes.renders;
 
-import com.mycompany.springdidz.onlyxml.interfaces.provider.IMessageProvider;
-import com.mycompany.springdidz.onlyxml.interfaces.render.IMessagerender;
+import com.mycompany.springdidz.onlyxml.simpleinjection.interfaces.provider.IMessageProvider;
+import com.mycompany.springdidz.onlyxml.simpleinjection.interfaces.render.IMessagerender;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package com.mycompany.springdidz.onlyxml;
+package com.mycompany.springdidz.onlyxml.simpleinjection;
 
-import com.mycompany.springdidz.onlyxml.interfaces.render.IMessagerender;
+import com.mycompany.springdidz.onlyxml.simpleinjection.interfaces.render.IMessagerender;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
